@@ -1,0 +1,73 @@
+.ui-widget {
+	font-size: 0.8em;
+}
+
+.ui-spinner-input {
+	width: 20px;
+}
+
+.ui-right-align {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.validation-error {
+	font-weight: bold;
+	color: red;
+}
+
+.epc-glass {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.25);    
+}
+
+.epc-menu-item {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	display: block;
+	zoom: 1;
+	vertical-align: middle;
+}
+
+.epc-container-row {
+	display: flex;	
+}
+
+.epc-container-col {
+	display: flex;
+	flex-direction: column;
+}
+
+@form-padding: 5px;
+
+.form-label {
+	text-align: right;
+	padding: @form-padding;
+}
+.form-input {
+	padding: @form-padding;
+}
+
+.epc-container-form-labels {
+	display: flex;
+	flex-direction: column;
+	order: 1;
+	flex-grow: 1;
+	label { .form-label }
+}
+
+.epc-container-form-inputs {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+	flex-grow: 7;
+	label { .form-input };
+	input { .form-input }
+}

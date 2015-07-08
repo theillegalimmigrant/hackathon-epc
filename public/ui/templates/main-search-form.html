@@ -1,0 +1,32 @@
+	<div class='ui-widget'>
+		<fieldset>
+			<legend>Search for Payments</legend>
+			<label>Payment Date:</label>
+			<input id="paymentDate" type="text">
+			<button id="todayButton"><i class="fa fa-calendar-o"> Today</i></button>
+			<button id="exportButton"><i class="fa fa-download"> Export</i></button>
+		</fieldset>
+	</div>
+	<div class='ui-widget'>
+		<fieldset>
+			<legend>Create Payment</legend>
+			<button id="newPaymentButton"><i class="fa fa-plus-circle"> New Payment</i></button>
+			<button id="importButton"><i class="fa fa-upload"> Import</i></button>
+		</fieldset>
+	</div>
+	<div class='ui-widget epc-container-col'>
+		<div>
+			<input type="checkbox" id="autoRefreshCheck">Auto Refresh every &nbsp;</input>
+			<input type="text" id="autoRefreshSpinner">
+		</div>
+		<div>
+			<input type="radio" id="paymentType" name="paymentType" value="all">Show all payments</input>
+			<input type="radio" id="paymentType" name="paymentType" value="itg">Show ITG support group payments</input>
+		</div>
+		<div>
+			<input type="checkbox" id="showGeneratedCheck">Show Generated Payments</input>
+		</div>
+	</div>
+
+
+	<div id="paymentEntryDialogContainer"></div>

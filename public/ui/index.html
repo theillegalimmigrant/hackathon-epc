@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>EPC</title>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet/less" href="../css/epc-styles.less"/>
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.js"></script>
+	<script src="../js/epc-namespace-1.0.js"></script>
+	<script src="../js/modules/common/epc-utils-1.0.js"></script>
+	<script src="../js/modules/common/epc-ui-fsprogress-1.0.js"></script>
+	<script src="../js/modules/common/epc-ui-wizard-1.0.js"></script>
+	<script src="../js/modules/payment/epc-payment-details-1.0.js"></script>
+	<script src="../js/modules/payment/epc-payment-list-1.0.js"></script>
+	<script src="../js/modules/payment/epc-auth-list-1.0.js"></script>
+	<script src="../js/modules/payment/epc-comp-list-1.0.js"></script>
+	<script src="../js/modules/payment/epc-payment-entry-1.0.js"></script>
+	<script src="../js/modules/main/epc-main-search-form-1.0.js"></script>
+	<script src="../js/modules/main/epc-main-details-1.0.js"></script>
+	<script src="../js/modules/main/epc-dashboard-1.0.js"></script>
+	<script src="../js/modules/main/epc-datamodel-controller-1.0.js"></script>
+	<script>
+		$(document).ready(function() {
+			epc.evtBus.publish(epc.evtBus.event.APP_START);
+		});
+	</script>
+</head>
+<body>
+	<div id="menubar"></div>
+	<div id="dashboardWiz">
+		<div id="main" class="epc-container-col">
+			<div id="mainSearchForm" class="epc-container-row"></div>
+			<div class='ui-widget' id="searchSummary" style="clear: both;">
+				<p>Results Returned: <label id="resultsReturnedLabel"></label></p>
+			</div>
+			<div id="mainDetailTab">
+				<ul>
+					<li><a href="#paymentListTab">Payment List</a></li>
+					<li><a href="#authPendingTab">Authorisation Pending</a></li>
+					<li><a href="#authPaymentsTab">Authorise Payments</a></li>
+					<li><a href="#fundingReportTab">Funding Report Tab</a></li>
+				</ul>
+				<div id="paymentListTab">TBD: paymentListTab</div>
+				<div id="authPendingTab">TBD: authPendingTab</div>
+				<div id="authPaymentsTab">TBD: authPaymentsTab</div>
+				<div id="fundingReportTab">TBD: fundingReportTab</div>
+			</div>			
+		</div>
+		<div id="newPayment">
+			// TODO
+			<button id="newPaymentCancel">Cancel</button>
+		</div>
+		<div id="paymentDetails"  class="epc-container-col">
+		</div>
+	</div>	
+</body>
+</html>

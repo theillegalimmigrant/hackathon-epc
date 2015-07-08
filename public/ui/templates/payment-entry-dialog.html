@@ -1,0 +1,55 @@
+	
+	<div id="paymentEntry" style="display: none;">
+		<div class="ui-widget" >
+			<fieldset>
+				<legend>From Account:</legend>
+				<div>
+					<label for="fromAccountName">Account Name:</label>
+					<input type="text" id="fromAccountName">
+					<span id="fromAccountNameError" class="validation-error"></span>					
+				</div>
+				<div>
+					<label for="fromBsb">BSB:</label>
+					<input type="text" id="fromBsb">
+					<span id="fromBsbError" class="validation-error"></span>					
+				</div>
+				<div>
+					<label for="fromAccountNumber">Account Number:</label>
+					<input type="text" id="fromAccountNumber">
+					<span id="fromAccountNumberError" class="validation-error"></span>					
+				</div>
+				<button id="fromAccountSelect">Select from list</button>
+			</fieldset>
+		</div>
+		<div class="ui-widget">
+			<fieldset>
+				<legend>To Account:</legend>
+				<label for="toAccountName">Account Name:</label>
+				<input type="text" id="toAccountName">
+				<label for="toBsb">BSB:</label>
+				<input type="text" id="toBsb">
+				<label for="toAccountNumber">Account Number:</label>
+				<input type="text" id="toAccountNumber">
+				<button id="toAccountSelect">Select from list</button>
+			</fieldset>
+		</div>
+		<div class="ui-widget">
+			<fieldset>
+				<legend>Payment Details:</legend>
+				<div class="ui-widget" style="float: left;">
+					<label for="paymentType">Payment Type:</label>
+					<input type="text" id="paymentType" disabled value="Direct Entry">
+					<label for="amount">Amount($):</label>
+					<input type="text" id="amount">
+				</div>
+				<div class="ui-widget" style="clear: both;">
+					<label for="comments" style="vertical-align:top;">Comments:</label>
+					<textarea rows="4" cols="50" id="comments"/>
+				</div>
+			</fieldset>
+		</div>
+		<div class="ui-widget">
+		    <button id="submit">Submit</button>
+		    <button id="close">Close</button>
+		</div>
+	</div>
